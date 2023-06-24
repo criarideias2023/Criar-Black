@@ -8,3 +8,7 @@ $amountOfUsers = mysqli_fetch_array($queryGetAccessAmount)["amount"];
 $newNumber = intval($amountOfUsers) + 1;
 $sqlNewAccess = "UPDATE `users` SET `amount` = $newNumber WHERE `id` = 1";
 $queryNewAccess = mysqli_query($connection, $sqlNewAccess);
+
+$sqlGetClients = "SELECT * FROM `clients`";
+$queryGetClients = mysqli_query($connection, $sqlGetClients);
+$clients = mysqli_fetch_array($queryGetClients);
