@@ -115,46 +115,19 @@ error_reporting(E_ALL);
 
       <div class="slider" id="slider">
         <div class="slide" id="slide">
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
+          <?php
+
+          while($client = $clients) {
+            echo '
+            <div class="parceiro-box">
+              <div class="parceiro-box-inner">
+                <img src="'.$client["banner"].'" alt="" />
+              </div>
           </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logosite branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
-          <div class="parceiro-box">
-            <div class="parceiro-box-inner">
-              <img src="./assets/logo_site_branco.png" alt="" />
-            </div>
-          </div>
+            ';
+          }
+
+          ?>
         </div>
         <div class="slider-control">
           <button class="ctrl-btn pro-prev">
