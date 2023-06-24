@@ -1078,6 +1078,7 @@
     position: relative;
     width: 64vw;
     height: 105vw;
+    min-height: fit-content;
   }
 
   .card-box::before {
@@ -1170,6 +1171,7 @@
     position: relative;
     width: 64vw;
     height: 100vw;
+    min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
