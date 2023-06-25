@@ -1,5 +1,6 @@
 <?php
 
+include("./php/config.php");
 include("./php/connection.php");
 include("./php/mainPage.php");
 
@@ -117,13 +118,13 @@ error_reporting(E_ALL);
         <div class="slide" id="slide">
           <?php
 
-          while($client = $clients) {
+          while($client = $queryGetClients->fetch_array()) {
             echo '
             <div class="parceiro-box">
               <div class="parceiro-box-inner">
-                <img src="'.$client["banner"].'" alt="" />
+                <img src="'.$assetsRepository.$client["banner"].'" alt="" />
               </div>
-          </div>
+            </div>
             ';
           }
 
