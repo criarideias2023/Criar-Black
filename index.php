@@ -73,7 +73,7 @@ include("./php/mainPage.php");
     <section class="top-box" id="home">
       <main class="top-left">
         <div class="top-text">
-          <h2>A AGÊNCIA MAIS CRIATIVA DA <span>REGIÃO</span></h2>
+          <h2>A AGÊNCIA MAIS CRIATIVA DO <span>BRASIL</span></h2>
           <p>
             Somos uma empresa especializada na atividade de conectar os
             produtores/donos de um produto ou serviço com os clientes, quer
@@ -554,7 +554,7 @@ include("./php/mainPage.php");
           <h3 class="card-tittle">Emerald</h3>
           <div class="card-text">
             <h4>R$</h4>
-            <h2>1300</h2>
+            <h2>1900</h2>
             <h4>/Mês</h4>
           </div>
           <ul>
